@@ -8,32 +8,32 @@
 
 | Nome | Matrícula | GitHub |
 |------|-----------|--------|
-| [Igor José Bastos Mota Filho] | [557179] | [@IgorF-prog] |
+| Igor José Bastos Mota Filho | 557179 | @IgorF-prog |
 
-**Professor(a):** [Nator Júnior Carvalho da Costa]
+**Professor(a):** Nator Júnior Carvalho da Costa
 
 ---
 
 ## 1. Público beneficiado
 
-- **Nome do estabelecimento:** [Mercadinho Igor]
+- **Nome do estabelecimento:** Mercadinho Igor
 - **Tipo:** Pequeno Empreendedor
-- **Localização:** [Tauá-CE]
-- **Responsável(is):** [Igor Mota]
-- **Atuação na comunidade:** [Vende diversos tipos de produtos, atendendo principalmente aos vizinhos e familiares]
+- **Localização:** Tauá-CE
+- **Responsável(is):** Igor Mota
+- **Atuação na comunidade:** Vende diversos tipos de produtos, atendendo principalmente aos vizinhos e familiares
 
 ## 2. Interação realizada
 
 ### 2.1 Escuta inicial
 
-- **Data:** [26/10/2026]
-- **Formato:** [presencial]
-- **Participantes:** [Igor Filho]
+- **Data:** 26/10/2026
+- **Formato:** presencial
+- **Participantes:** Igor Filho
 
 **Necessidades relatadas:**
-- [Algo para acompanhar melhor o controle da movimentação dos produtos]
-- [Algo para fazer o caixa diário de forma mais rápida e precisa]
-- [Uma identidade visual para o empreendimento]
+- Algo para acompanhar melhor o controle da movimentação dos produtos
+- Algo para fazer o caixa diário de forma mais rápida e precisa
+- Uma identidade visual para o empreendimento
 
 ### 2.2 Apresentação da proposta e retorno
 
