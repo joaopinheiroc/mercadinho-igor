@@ -1,0 +1,31 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.formulario input {
+  padding: 0.65rem;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.formulario input:focus {
+  outline: 2px solid #1b5e20;
+}
+
+.formulario .botao {
+  margin-top: 1rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.voltar {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #1b5e20;
+}
