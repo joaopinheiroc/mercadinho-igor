@@ -1,4 +1,4 @@
-# [Sistema Mercadinho Igor]
+# Sistema Mercadinho Igor
 
 > Projeto da Disciplina de Desenvolvimento de Software para Web 2026.2
 > Universidade Federal do Ceará, Campus de Quixadá
