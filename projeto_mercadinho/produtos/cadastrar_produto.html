@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Igor | Cadastro de Produto</title>
+  <link rel="stylesheet" href="../sistema.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Cadastro de Produto</h1>
+    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
+  </header>
+
+  <main class="conteudo">
+    <section class="cartao" aria-labelledby="titulo-dados">
+      <h2 id="titulo-dados">Dados do produto</h2>
+      <p class="nota">Os campos com * são obrigatórios.</p>
+
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="nome">Nome do produto *</label>
+          <input type="text" id="nome" name="nome" placeholder="Ex.: Arroz 1kg" required>
+        </div>
+
+        <div class="campo">
+          <label for="categoria">Categoria *</label>
+          <select id="categoria" name="categoria" required>
+            <option value="">Selecione</option>
+            <option>Alimentos</option>
+            <option>Bebidas</option>
+            <option>Limpeza</option>
+            <option>Higiene</option>
+            <option>Outros</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="preco">Preço de venda (R$) *</label>
+          <input type="text" id="preco" name="preco" inputmode="decimal" placeholder="0,00" required>
+        </div>
+
+        <div class="campo">
+          <label for="quantidade">Quantidade em estoque *</label>
+          <input type="number" id="quantidade" name="quantidade" min="0" value="0" required>
+        </div>
+
+        <div class="campo">
+          <label for="minimo">Estoque mínimo</label>
+          <input type="number" id="minimo" name="minimo" min="0" value="0" aria-describedby="ajuda-minimo">
+          <small id="ajuda-minimo" class="nota">Avisa quando o produto estiver acabando.</small>
+        </div>
+
+        <div class="campo">
+          <label for="codigo">Código de barras</label>
+          <input type="text" id="codigo" name="codigo" inputmode="numeric" placeholder="Opcional">
+        </div>
+
+        <div class="linha-form">
+          <button type="submit" class="botao">Cadastrar produto</button>
+          <a href="listar_produtos.html" class="botao botao-sec">Cancelar</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
