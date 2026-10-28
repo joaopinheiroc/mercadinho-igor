@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Igor | Lista de Produtos</title>
+  <link rel="stylesheet" href="../sistema.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Lista de Produtos</h1>
+    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
+  </header>
+
+  <main class="conteudo">
+    <section class="cartao" aria-labelledby="titulo-busca">
+      <h2 id="titulo-busca">Buscar produto</h2>
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="busca">Nome do produto</label>
+          <input type="search" id="busca" name="busca" placeholder="Digite o nome">
+        </div>
+
+        <button type="submit" class="botao">Buscar</button>
+      </form>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-lista">
+      <h2 id="titulo-lista">Produtos disponíveis no Mercadinho Igor</h2>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Quantidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Arroz</td>
+              <td>Alimentos</td>
+              <td>R$ 4,50</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Coca-Cola 2l</td>
+              <td>Bebidas</td>
+              <td>R$ 10,00</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Miojo</td>
+              <td>Alimentos</td>
+              <td>R$ 2,00</td>
+              <td>8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

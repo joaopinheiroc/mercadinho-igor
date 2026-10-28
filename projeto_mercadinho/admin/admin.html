@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Igor | Administrador</title>
+  <link rel="stylesheet" href="../sistema.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Olá, <span id="nome-admin">Administrador</span>!</h1>
+    <a href="../menu.html" class="voltar-topo">Sair</a>
+  </header>
+
+  <main class="conteudo">
+    <h2>O que você deseja fazer?</h2>
+
+    <section class="grupo" aria-labelledby="titulo-clientes">
+        <h3 id="titulo-clientes">Clientes</h3>
+        <nav class="cards" aria-label="Ações de clientes">
+            <a href="../clientes/cadastro_cliente.html" class="card">
+                <span class="icone" aria-hidden="true">➕</span>
+                <span class="titulo">Cadastrar Cliente</span>
+            </a>
+            <a href="../clientes/editar_cliente.html" class="card">
+                <span class="icone" aria-hidden="true">✏️</span>
+                <span class="titulo">Editar Cliente</span>
+            </a>
+            <a href="../clientes/listar_clientes.html" class="card">
+                <span class="icone" aria-hidden="true">📋</span>
+                <span class="titulo">Listar Clientes</span>
+            </a>
+            <a href="../clientes/contas_clientes.html" class="card">
+                <span class="icone" aria-hidden="true">📒</span>
+                <span class="titulo">Consultar Contas</span>
+            </a>
+        </nav>
+    </section>
+
+    <section class="grupo" aria-labelledby="titulo-produtos">
+        <h3 id="titulo-produtos">Produtos</h3>
+        <nav class="cards" aria-label="Ações de produtos">
+            <a href="../produtos/cadastrar_produto.html" class="card">
+                <span class="icone" aria-hidden="true">➕</span>
+                <span class="titulo">Cadastrar Produto</span>
+            </a>
+            <a href="../produtos/editar_produto.html" class="card">
+                <span class="icone" aria-hidden="true">✏️</span>
+                <span class="titulo">Editar Produto</span>
+            </a>
+            <a href="../produtos/listar_produtos.html" class="card">
+                <span class="icone" aria-hidden="true">📋</span>
+                <span class="titulo">Listar Produtos</span>
+            </a>
+        </nav>
+    </section>
+
+    <section class="grupo" aria-labelledby="titulo-operacao">
+        <h3 id="titulo-operacao">Operação do dia</h3>
+        <nav class="cards" aria-label="Operação do dia">
+            <a href="../vendas/registrar_venda.html" class="card">
+                <span class="icone" aria-hidden="true">🛒</span>
+                <span class="titulo">Registrar Venda</span>
+            </a>
+            <a href="../estoque/entrada_estoque.html" class="card">
+                <span class="icone" aria-hidden="true">📦</span>
+                <span class="titulo">Entrada de Estoque</span>
+            </a>
+            <a href="../caixa/caixa_diario.html" class="card">
+                <span class="icone" aria-hidden="true">💰</span>
+                <span class="titulo">Caixa Diário</span>
+            </a>
+        </nav>
+    </section>
+  </main>
+
+  <script>
+    // Lê o usuário digitado no login (vem na URL: admin.html?usuario=...)
+    const usuario = new URLSearchParams(window.location.search).get("usuario");
+    if (usuario) {
+      document.getElementById("nome-admin").textContent = usuario;
+    }
+  </script>
+</body>
+</html>
