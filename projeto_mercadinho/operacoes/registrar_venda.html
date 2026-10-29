@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Igor | Registrar Venda</title>
+  <link rel="stylesheet" href="../sistema.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Registrar Venda</h1>
+    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
+  </header>
+
+  <main class="conteudo">
+    <section class="cartao" aria-labelledby="titulo-item">
+      <h2 id="titulo-item">Adicionar item</h2>
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="produto">Produto</label>
+          <select id="produto" name="produto">
+            <option selected>Selecione o produto</option>
+            <option>Arroz, R$ 4,50</option>
+            <option>Coca-Cola 2l, R$ 10,00</option>
+            <option>Miojo, R$ 2,00</option>
+          </select>
+        </div>
+
+        <div class="campo campo-curto">
+          <label for="quantidade">Quantidade</label>
+          <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+        </div>
+
+        <button type="submit" class="botao">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-venda">
+      <h2 id="titulo-venda">Venda atual</h2>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Produto</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Qtd.</th>
+              <th scope="col">Subtotal</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Arroz</td>
+              <td>R$ 4,50</td>
+              <td>2</td>
+              <td>R$ 9,00</td>
+              <td><button type="button" class="botao botao-sec" aria-label="Remover Arroz">Remover</button></td>
+            </tr>
+            <tr>
+              <td>Coca-Cola 2l</td>
+              <td>R$ 10,00</td>
+              <td>1</td>
+              <td>R$ 10,00</td>
+              <td><button type="button" class="botao botao-sec" aria-label="Remover Coca-Cola 2l">Remover</button></td>
+            </tr>
+            <tr>
+              <td>Miojo</td>
+              <td>R$ 2,00</td>
+              <td>3</td>
+              <td>R$ 6,00</td>
+              <td><button type="button" class="botao botao-sec" aria-label="Remover Miojo">Remover</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="total">Total: R$ 25,00</p>
+
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="pagamento">Forma de pagamento</label>
+          <select id="pagamento" name="pagamento">
+            <option>Dinheiro</option>
+            <option>Pix</option>
+            <option>Cartão</option>
+          </select>
+        </div>
+
+        <button type="submit" class="botao">Finalizar venda</button>
+      </form>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-hoje">
+      <h2 id="titulo-hoje">Vendas de hoje</h2>
+      <p class="nota">Dados de exemplo para o protótipo.</p>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Hora</th>
+              <th scope="col">Itens</th>
+              <th scope="col">Pagamento</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08:12</td>
+              <td>2x Arroz, 1x Miojo</td>
+              <td>Dinheiro</td>
+              <td>R$ 11,00</td>
+            </tr>
+            <tr>
+              <td>09:40</td>
+              <td>1x Coca-Cola 2l</td>
+              <td>Pix</td>
+              <td>R$ 10,00</td>
+            </tr>
+            <tr>
+              <td>11:05</td>
+              <td>3x Miojo, 1x Arroz</td>
+              <td>Cartão</td>
+              <td>R$ 10,50</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
