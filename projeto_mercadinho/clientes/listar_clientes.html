@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Igor | Clientes</title>
+  <link rel="stylesheet" href="../sistema.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Lista de Clientes</h1>
+    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
+  </header>
+
+  <main class="conteudo">
+    <section class="cartao" aria-labelledby="titulo-busca">
+      <h2 id="titulo-busca">Buscar cliente</h2>
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="busca">Nome do cliente</label>
+          <input type="search" id="busca" name="busca" placeholder="Digite o nome">
+        </div>
+
+        <button type="submit" class="botao">Buscar</button>
+        <a href="cadastrar_cliente.html" class="botao botao-sec">Novo cliente</a>
+      </form>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-lista">
+      <h2 id="titulo-lista">Clientes cadastrados</h2>
+      <p class="nota">Dados de exemplo para o protótipo.</p>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Telefone</th>
+              <th scope="col">Bairro</th>
+              <th scope="col">Fiado</th>
+              <th scope="col">Limite</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Maria Souza</td>
+              <td>(88) 99999-0001</td>
+              <td>Centro</td>
+              <td>Sim</td>
+              <td>R$ 150,00</td>
+              <td>
+                <div class="linha-form">
+                  <a href="editar_cliente.html" class="botao botao-sec" aria-label="Editar Maria Souza">Editar</a>
+                  <a href="contas_cliente.html" class="botao botao-sec" aria-label="Ver conta de Maria Souza">Ver conta</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>José Lima</td>
+              <td>(88) 99999-0002</td>
+              <td>Alto São Francisco</td>
+              <td>Não</td>
+              <td>-</td>
+              <td>
+                <div class="linha-form">
+                  <a href="editar_cliente.html" class="botao botao-sec" aria-label="Editar José Lima">Editar</a>
+                  <a href="contas_cliente.html" class="botao botao-sec" aria-label="Ver conta de José Lima">Ver conta</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Ana Paula</td>
+              <td>(88) 99999-0003</td>
+              <td>Centro</td>
+              <td>Sim</td>
+              <td>R$ 100,00</td>
+              <td>
+                <div class="linha-form">
+                  <a href="editar_cliente.html" class="botao botao-sec" aria-label="Editar Ana Paula">Editar</a>
+                  <a href="contas_cliente.html" class="botao botao-sec" aria-label="Ver conta de Ana Paula">Ver conta</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Carlos Pereira</td>
+              <td>(88) 99999-0004</td>
+              <td>Bairro Novo</td>
+              <td>Sim</td>
+              <td>R$ 80,00</td>
+              <td>
+                <div class="linha-form">
+                  <a href="editar_cliente.html" class="botao botao-sec" aria-label="Editar Carlos Pereira">Editar</a>
+                  <a href="contas_cliente.html" class="botao botao-sec" aria-label="Ver conta de Carlos Pereira">Ver conta</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

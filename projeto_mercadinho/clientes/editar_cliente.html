@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Igor | Editar Cliente</title>
+  <link rel="stylesheet" href="../sistema.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Editar Cliente</h1>
+    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
+  </header>
+
+  <main class="conteudo">
+    <section class="cartao" aria-labelledby="titulo-escolha">
+      <h2 id="titulo-escolha">Escolher cliente</h2>
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="cliente">Cliente</label>
+          <select id="cliente" name="cliente">
+            <option value="">Selecione um cliente</option>
+            <option>Maria Souza</option>
+            <option>José Lima</option>
+            <option>Ana Paula</option>
+            <option>Carlos Pereira</option>
+          </select>
+        </div>
+
+        <button type="submit" class="botao">Carregar cliente</button>
+      </form>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-dados">
+      <h2 id="titulo-dados">Dados do cliente</h2>
+      <p class="nota">Os campos com * são obrigatórios.</p>
+
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" name="nome" required autocomplete="name">
+        </div>
+
+        <div class="campo">
+          <label for="telefone">Telefone *</label>
+          <input type="tel" id="telefone" name="telefone" required autocomplete="tel">
+        </div>
+
+        <div class="campo">
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" name="endereco">
+        </div>
+
+        <div class="campo">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" inputmode="numeric" placeholder="Opcional">
+        </div>
+
+        <div class="campo">
+          <label for="fiado">Permitir compra no fiado? *</label>
+          <select id="fiado" name="fiado" required>
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="limite">Limite de fiado (R$)</label>
+          <input type="text" id="limite" name="limite" inputmode="decimal" aria-describedby="ajuda-limite">
+          <small id="ajuda-limite" class="nota">Saldo devedor atual:</small>
+        </div>
+
+        <div class="linha-form">
+          <a href="../admin/admin.html" class="botao">Salvar alterações</a>
+          <a href="../admin/admin.html" class="botao botao-sec">Cancelar</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

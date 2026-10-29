@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Igor | Cadastrar Cliente</title>
+  <link rel="stylesheet" href="../sistema.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Cadastrar Cliente</h1>
+    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
+  </header>
+
+  <main class="conteudo">
+    <section class="cartao" aria-labelledby="titulo-dados">
+      <h2 id="titulo-dados">Dados do cliente</h2>
+      <p class="nota">Os campos com * são obrigatórios.</p>
+
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" name="nome" placeholder="Ex.: Maria Souza" required autocomplete="name">
+        </div>
+
+        <div class="campo">
+          <label for="telefone">Telefone / WhatsApp *</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(88) 99999-0000" required autocomplete="tel">
+        </div>
+
+        <div class="campo">
+          <label for="endereco">Endereço ou bairro</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Opcional">
+        </div>
+
+        <div class="campo">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" inputmode="numeric" placeholder="Opcional">
+        </div>
+
+        <div class="campo">
+          <label for="fiado">Permitir compra no fiado? *</label>
+          <select id="fiado" name="fiado" required>
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="limite">Limite de fiado (R$)</label>
+          <input type="text" id="limite" name="limite" inputmode="decimal" placeholder="0,00" aria-describedby="ajuda-limite">
+          <small id="ajuda-limite" class="nota">Valor máximo que o cliente pode ficar devendo.</small>
+        </div>
+
+        <div class="linha-form">
+          <button type="submit" class="botao">Cadastrar cliente</button>
+          <a href="../admin/admin.html" class="botao botao-sec">Cancelar</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
