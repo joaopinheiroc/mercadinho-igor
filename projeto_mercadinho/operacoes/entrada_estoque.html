@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Igor | Entrada de Estoque</title>
+  <link rel="stylesheet" href="../sistema.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Entrada de Estoque</h1>
+    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
+  </header>
+
+  <main class="conteudo">
+    <section class="cartao" aria-labelledby="titulo-entrada">
+      <h2 id="titulo-entrada">Registrar entrada</h2>
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="produto">Produto</label>
+          <select id="produto" name="produto">
+            <option selected>Selecione o produto</option>
+            <option>Arroz</option>
+            <option>Coca-Cola 2l</option>
+            <option>Miojo</option>
+          </select>
+        </div>
+
+        <div class="campo campo-curto">
+          <label for="quantidade">Quantidade</label>
+          <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+        </div>
+
+        <button type="submit" class="botao">Registrar entrada</button>
+      </form>
+
+      <p class="nota">O produto não está na lista? 
+        <a href="../produtos/cadastrar_produto.html">Cadastre um novo produto</a>.
+      </p>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-hoje">
+      <h2 id="titulo-hoje">Entradas de hoje</h2>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Hora</th>
+              <th scope="col">Produto</th>
+              <th scope="col">Quantidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>07:50</td>
+              <td>Arroz</td>
+              <td>+2</td>
+            </tr>
+            <tr>
+              <td>07:52</td>
+              <td>Coca-Cola 2l</td>
+              <td>+1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-estoque">
+      <h2 id="titulo-estoque">Estoque atual</h2>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Produto</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Em estoque</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Arroz</td>
+              <td>R$ 4,50</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Coca-Cola 2l</td>
+              <td>R$ 10,00</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Miojo</td>
+              <td>R$ 2,00</td>
+              <td>8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Igor | Caixa Diário</title>
+  <link rel="stylesheet" href="../sistema.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Caixa Diário</h1>
+    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
+  </header>
+
+  <main class="conteudo">
+    <section class="cartao" aria-labelledby="titulo-resumo">
+      <h2 id="titulo-resumo">Resumo do dia</h2>
+      <p class="nota">Dados de exemplo para o protótipo.</p>
+
+      <div class="resumo">
+        <div class="indicador">
+          Vendas realizadas
+          <span class="valor">3</span>
+        </div>
+        <div class="indicador">
+          Total vendido
+          <span class="valor">R$ 31,50</span>
+        </div>
+        <div class="indicador">
+          Em dinheiro
+          <span class="valor">R$ 11,00</span>
+        </div>
+        <div class="indicador">
+          Em Pix
+          <span class="valor">R$ 10,00</span>
+        </div>
+        <div class="indicador">
+          No cartão
+          <span class="valor">R$ 10,50</span>
+        </div>
+        <div class="indicador">
+          Unidades que entraram no estoque
+          <span class="valor">10</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-produtos">
+      <h2 id="titulo-produtos">Produtos vendidos hoje</h2>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Produto</th>
+              <th scope="col">Quantidade</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Arroz</td>
+              <td>3</td>
+              <td>R$ 13,50</td>
+            </tr>
+            <tr>
+              <td>Coca-Cola 2l</td>
+              <td>1</td>
+              <td>R$ 10,00</td>
+            </tr>
+            <tr>
+              <td>Miojo</td>
+              <td>4</td>
+              <td>R$ 8,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-fechamento">
+      <h2 id="titulo-fechamento">Fechamento do caixa</h2>
+      <form action="#">
+        <div class="linha-form">
+          <div class="campo">
+            <label for="abertura">Troco inicial (R$)</label>
+            <input type="text" id="abertura" name="abertura" inputmode="decimal" value="50,00">
+          </div>
+
+          <div class="indicador campo">
+            Dinheiro esperado na gaveta
+            <span class="valor">R$ 61,00</span>
+          </div>
+
+          <div class="campo">
+            <label for="contado">Dinheiro contado (R$)</label>
+            <input type="text" id="contado" name="contado" inputmode="decimal" placeholder="0,00">
+          </div>
+        </div>
+
+        <p class="situacao" role="status">Caixa conferido: sem diferença</p>
+
+        <p class="nota">O esperado é o troco inicial somado às vendas em dinheiro.</p>
+
+        <button type="submit" class="botao">Fechar caixa</button>
+      </form>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-historico">
+      <h2 id="titulo-historico">Fechamentos anteriores</h2>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col">Vendas</th>
+              <th scope="col">Total</th>
+              <th scope="col">Esperado</th>
+              <th scope="col">Contado</th>
+              <th scope="col">Diferença</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>26/10/2026</td>
+              <td>5</td>
+              <td>R$ 48,00</td>
+              <td>R$ 72,00</td>
+              <td>R$ 71,00</td>
+              <td>-R$ 1,00</td>
+            </tr>
+            <tr>
+              <td>25/10/2026</td>
+              <td>4</td>
+              <td>R$ 36,50</td>
+              <td>R$ 64,50</td>
+              <td>R$ 64,50</td>
+              <td>R$ 0,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
