@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercadinho Igor | Conta do Cliente</title>
+  <link rel="stylesheet" href="../sistema.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Conta do Cliente</h1>
+    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
+  </header>
+
+  <main class="conteudo">
+    <section class="cartao" aria-labelledby="titulo-escolha">
+      <h2 id="titulo-escolha">Escolher cliente</h2>
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="cliente">Digite ou escolha o nome do cliente</label>
+          <input type="search" id="cliente" name="cliente" list="lista-clientes" placeholder="Ex.: Maria Souza" autocomplete="off">
+          <datalist id="lista-clientes">
+              <option value="Maria Souza" label="(88) 99999-0001"></option>
+              <option value="José Lima" label="(88) 99999-0002"></option>
+              <option value="Ana Paula" label="(88) 99999-0003"></option>
+              <option value="Carlos Pereira" label="(88) 99999-0004"></option>
+          </datalist>
+        </div>
+
+        <button type="submit" class="botao">Ver conta</button>
+        <a href="listar_clientes.html" class="botao botao-sec">Ver todos os clientes</a>
+      </form>
+      <p class="nota">Exibindo a conta de: Maria Souza (exemplo).</p>
+    </section>
+    <section class="cartao" aria-labelledby="titulo-dados">
+      <h2 id="titulo-dados">Maria Souza</h2>
+      <p class="nota">Dados de exemplo para o protótipo.</p>
+
+      <dl class="dados-cliente">
+        <div>
+          <dt>Telefone</dt>
+          <dd>(88) 99999-0001</dd>
+        </div>
+        <div>
+          <dt>Bairro</dt>
+          <dd>Centro</dd>
+        </div>
+        <div>
+          <dt>Cliente desde</dt>
+          <dd>03/10/2026</dd>
+        </div>
+        <div>
+          <dt>Limite de fiado</dt>
+          <dd>R$ 150,00</dd>
+        </div>
+        <div>
+          <dt>Limite disponível</dt>
+          <dd>R$ 65,00</dd>
+        </div>
+        <div>
+          <dt>Situação</dt>
+          <dd><span class="tag tag-devendo">Devendo</span></dd>
+        </div>
+      </dl>
+
+      <p><a href="editar_cliente.html" class="botao botao-sec">Editar cliente</a></p>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-resumo">
+      <h2 id="titulo-resumo">Resumo da conta</h2>
+      <div class="resumo">
+        <div class="indicador">
+          Saldo devedor
+          <span class="valor">R$ 85,00</span>
+        </div>
+        <div class="indicador">
+          Compras no mês
+          <span class="valor">R$ 105,00</span>
+        </div>
+        <div class="indicador">
+          Total pago no mês
+          <span class="valor">R$ 20,00</span>
+        </div>
+        <div class="indicador">
+          Último pagamento
+          <span class="valor">15/10/2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-historico">
+      <h2 id="titulo-historico">Histórico detalhado</h2>
+
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="periodo">Período</label>
+          <select id="periodo" name="periodo">
+            <option selected>Este mês</option>
+            <option>Últimos 30 dias</option>
+            <option>Todo o período</option>
+          </select>
+        </div>
+
+        <button type="submit" class="botao">Filtrar</button>
+      </form>
+
+      <p class="nota">Toque em um lançamento para ver os detalhes.</p>
+
+      <details class="movimento" open>
+        <summary>22/10/2026 às 16:30 | Compra no fiado | R$ 60,00</summary>
+        <div class="tabela-container">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Qtd.</th>
+                <th scope="col">Preço unitário</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Coca-Cola 2l</td>
+                <td>6</td>
+                <td>R$ 10,00</td>
+                <td>R$ 60,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="total">Total da compra: R$ 60,00</p>
+        <p class="nota">Saldo antes: R$ 25,00. Saldo depois: R$ 85,00.</p>
+      </details>
+
+      <details class="movimento">
+        <summary>15/10/2026 às 09:20 | Pagamento | R$ 20,00</summary>
+        <dl class="dados-cliente">
+          <div>
+            <dt>Forma de pagamento</dt>
+            <dd>Dinheiro</dd>
+          </div>
+          <div>
+            <dt>Valor pago</dt>
+            <dd>R$ 20,00</dd>
+          </div>
+          <div>
+            <dt>Saldo antes</dt>
+            <dd>R$ 45,00</dd>
+          </div>
+          <div>
+            <dt>Saldo depois</dt>
+            <dd>R$ 25,00</dd>
+          </div>
+        </dl>
+      </details>
+
+      <details class="movimento">
+        <summary>10/10/2026 às 18:05 | Compra no fiado | R$ 30,00</summary>
+        <div class="tabela-container">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Qtd.</th>
+                <th scope="col">Preço unitário</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Coca-Cola 2l</td>
+                <td>3</td>
+                <td>R$ 10,00</td>
+                <td>R$ 30,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="total">Total da compra: R$ 30,00</p>
+        <p class="nota">Saldo antes: R$ 15,00. Saldo depois: R$ 45,00.</p>
+      </details>
+
+      <details class="movimento">
+        <summary>03/10/2026 às 17:40 | Compra no fiado | R$ 15,00</summary>
+        <div class="tabela-container">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Qtd.</th>
+                <th scope="col">Preço unitário</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Arroz</td>
+                <td>2</td>
+                <td>R$ 4,50</td>
+                <td>R$ 9,00</td>
+              </tr>
+              <tr>
+                <td>Miojo</td>
+                <td>3</td>
+                <td>R$ 2,00</td>
+                <td>R$ 6,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="total">Total da compra: R$ 15,00</p>
+        <p class="nota">Saldo antes: R$ 0,00. Saldo depois: R$ 15,00.</p>
+      </details>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-pagamento">
+      <h2 id="titulo-pagamento">Registrar pagamento</h2>
+      <form action="#" class="linha-form">
+        <div class="campo">
+          <label for="valor">Valor pago (R$)</label>
+          <input type="text" id="valor" name="valor" inputmode="decimal" placeholder="0,00" required>
+        </div>
+
+        <div class="campo">
+          <label for="forma">Forma de pagamento</label>
+          <select id="forma" name="forma">
+            <option>Dinheiro</option>
+            <option>Pix</option>
+            <option>Cartão</option>
+          </select>
+        </div>
+
+        <button type="submit" class="botao">Registrar pagamento</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
