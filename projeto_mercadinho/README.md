@@ -51,16 +51,16 @@
 
 ## 3. Problema identificado
 
-- **Situação atual:** [como a demanda é atendida hoje: caderninho, WhatsApp, Instagram, de boca em boca...]
-- **Público afetado:** [donos, funcionários, clientes]
-- **Dificuldades:** [perda de pedidos, pouca divulgação, falta de organização, etc.]
-- **Contribuição esperada da solução:** [o que vai melhorar com a aplicação Web]
+- **Situação atual:** Controle feito através de um caderno
+- **Público afetado:** Donos e funcionários
+- **Dificuldades:** Perda de pedidos, pouca divulgação, falta de organização, etc.
+- **Contribuição esperada da solução:** Irá tornar o trabalho mais fácil e organizado
 
 ## 4. Escopo
 
 ### 4.1 Objetivo
 
-[Uma ou duas frases: o que a aplicação pretende resolver e para quem.]
+Elevar a qualidade do trabalho de um pequeno empreendedor, fazendo com que ele cresça usando a tecnologia.
 
 ### 4.2 Funcionalidades essenciais (primeira versão)
 
@@ -70,7 +70,6 @@
 
 ### 4.3 Limitações da primeira versão
 
-- [O que **não** será feito agora, ex.: controle de estoque, pagamento online, PDV]
 - Nesta etapa o protótipo é apenas HTML e CSS, sem interações em JavaScript.
 
 ## 5. Requisitos
@@ -97,9 +96,19 @@
 
 | Página | Arquivo | Finalidade |
 |--------|---------|-----------|
-| Início | `index.html` | [apresentação e destaques] |
-| Produtos | `produtos.html` | [catálogo] |
-| Contato | `contato.html` | [horários, endereço, WhatsApp] |
+| Início | `menu.html` | Login |
+| admin | `admin.html` | Página principal do site |
+| produtos | `cadastrar_produto.html` | Cadastrar produtos |
+| produtos | `editar_produto.html` | Editar produtos |
+| produtos | `listar_produtos.html` | Exibir lista de todos os produtos |
+| clientes | `cadastrar_cliente.html` | Cadastrar clientes |
+| clientes | `editar_cliente.html` | Editar clientes |
+| clientes | `listar_clientes.html` | Exibir lista de todos os clientes |
+| clientes | `contas_clientes.html` | Exibir contas de todos os clientes |
+| operacoes | `caixa_diario.html` | Fazer o caixa de forma automática |
+| operacoes | `entrada_estoque.html` | Registrar entrada de estoque |
+| operacoes | `registrar_venda.html` | Registrar venda de produto |
+
 
 ### 6.2 Fluxo de navegação
 
@@ -125,7 +134,7 @@ flowchart LR
 
 ## 7. Protótipo
 
-- **Como abrir:** baixe o repositório e abra `index.html` no navegador.
+- **Como abrir:** baixe o repositório e abra `menu.html` no navegador.
 - **Demonstração online (opcional):** [link do GitHub Pages]
 
 ## 8. Estrutura do repositório
@@ -133,9 +142,22 @@ flowchart LR
 ```
 /
 ├── menu.html
-├── pages/
-├── css/
-├── img/
+├── sistema.css
+├── admin/
+|   ├── admin.html
+├── produtos/
+|   ├── cadastrar_produto.html
+|   ├── editar_produto.html
+|   ├── listar_produtos.html
+├── clientes/
+|   ├── cadastrar_cliente.html
+|   ├── contas_clientes.html
+|   ├── editar_cliente.html
+|   ├── listar_clientes.html
+├── operacoes/
+|   ├── caixa_diario.html
+|   ├── entrada_estoque.html
+|   ├── registrar_venda.html
 ├── docs/
 │   ├── evidencias/
 │   └── esboços/
