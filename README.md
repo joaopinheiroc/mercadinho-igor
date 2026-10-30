@@ -9,6 +9,7 @@
 | Nome | Matrícula | GitHub |
 |------|-----------|--------|
 | Igor José Bastos Mota Filho | 557179 | @IgorF-prog |
+| João Pinheiro Cavalcante | 606422 | @joaopinheiroc |
 
 **Professor(a):** Nator Júnior Carvalho da Costa
 
