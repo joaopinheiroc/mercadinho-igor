@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="topo">
-    <h1>Olá, <span id="nome-admin">Administrador</span>!</h1>
+    <h1>Olá, Administrador!</h1>
     <a href="../menu.html" class="voltar-topo">Sair</a>
   </header>
 
@@ -73,13 +73,5 @@
         </nav>
     </section>
   </main>
-
-  <script>
-    // Lê o usuário digitado no login (vem na URL: admin.html?usuario=...)
-    const usuario = new URLSearchParams(window.location.search).get("usuario");
-    if (usuario) {
-      document.getElementById("nome-admin").textContent = usuario;
-    }
-  </script>
 </body>
 </html>
