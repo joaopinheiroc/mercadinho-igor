@@ -60,18 +60,14 @@
 
         <div class="campo">
           <label for="quantidade">Quantidade em estoque *</label>
-          <input type="number" id="quantidade" name="quantidade" min="0" required aria-describedby="ajuda-quantidade">
+          <input type="number" id="quantidade" name="quantidade" value="0" readonly aria-describedby="ajuda-quantidade">
+          <small id="ajuda-quantidade" class="nota">Todo produto começa com 0. Para dar entrada, use Entrada de Estoque.</small>
         </div>
 
         <div class="campo">
           <label for="minimo">Estoque mínimo</label>
           <input type="number" id="minimo" name="minimo" min="0" aria-describedby="ajuda-minimo">
           <small id="ajuda-minimo" class="nota">Avisa quando o produto estiver acabando.</small>
-        </div>
-
-        <div class="campo">
-          <label for="codigo">Código de barras</label>
-          <input type="text" id="codigo" name="codigo" inputmode="numeric" placeholder="Opcional">
         </div>
 
         <div class="linha-form">
