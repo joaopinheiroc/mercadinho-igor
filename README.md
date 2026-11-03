@@ -10,6 +10,8 @@
 |------|-----------|--------|
 | Igor José Bastos Mota Filho | 557179 | @IgorF-prog |
 | João Pinheiro Cavalcante | 606422 | @joaopinheiroc |
+| Vitória das Graças Silva | 557364 | @vickSil |
+| Davyd Pinheiro Jacinto | 553156 | @Davyd01322 |
 
 **Professor(a):** Nator Júnior Carvalho da Costa
 
@@ -38,17 +40,10 @@
 
 ### 2.2 Apresentação da proposta e retorno
 
-- **Data:** [dd/mm/aaaa]
-- **O que foi apresentado:** [esboços, protótipo, lista de funcionalidades]
-- **Retorno recebido:** [o que aprovaram, o que pediram para mudar]
-- **Ajustes feitos no escopo:** [o que mudou depois do retorno]
+- **Data:** [29/10/2026]
+- **O que foi apresentado:** esboços das telas e o protótipo em HTML e CSS, com a lista de funcionalidades (login, produtos, estoque, vendas, clientes, conta do cliente e caixa diário)
+- **Retorno recebido:** o Igor aprovou a organização das telas e achou o fluxo simples de usar.
 
-### 2.3 Evidências
-
-[Fotos, prints de conversa, anotações. Coloque os arquivos na pasta `docs/evidencias/` e liste aqui.]
-
-- `docs/evidencias/conversa-01.png`
-- `docs/evidencias/reuniao-01.jpg`
 
 ## 3. Problema identificado
 
@@ -135,25 +130,64 @@ Elevar a qualidade do trabalho de um pequeno empreendedor, fazendo com que ele c
 
 ### 6.2 Fluxo de navegação
 
-[Insira um esboço ou diagrama. Exemplo com Mermaid, que o GitHub renderiza:]
-
 ```mermaid
 flowchart LR
-    A[Início] --> B[Produtos]
-    A --> C[Ofertas]
-    A --> D[Contato]
-    B --> E[Fazer pedido]
+    A[Login<br>menu.html] --> B[Painel do administrador<br>admin.html]
+
+    B --> P[Produtos]
+    B --> C[Clientes]
+    B --> O[Operações]
+
+    P --> P1[Cadastrar produto]
+    P --> P2[Listar produtos]
+    P2 --> P3[Editar produto]
+
+    C --> C1[Cadastrar cliente]
+    C --> C2[Listar clientes]
+    C --> C3[Contas dos clientes]
+    C2 --> C4[Editar cliente]
+
+    O --> O1[Registrar venda]
+    O --> O2[Entrada de estoque]
+    O --> O3[Caixa diário]
 ```
 
 ### 6.3 Esboços (wireframes)
 
-[Imagens em `docs/esboços/`, referenciadas aqui.]
+<table>
+  <tr>
+    <td align="center">
+      <img src="docs/esbocos/01-login.png" alt="Esboço da tela de login" width="350"><br>
+      <sub><b>Login</b></sub>
+    </td>
+    <td align="center">
+      <img src="docs/esbocos/02-painel-admin.png" alt="Esboço do painel do administrador" width="350"><br>
+      <sub><b>Painel do administrador</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/esbocos/03-listar-produtos.png" alt="Esboço da lista de produtos" width="350"><br>
+      <sub><b>Lista de produtos</b></sub>
+    </td>
+    <td align="center">
+      <img src="docs/esbocos/04-registrar-venda.png" alt="Esboço da tela de venda" width="350"><br>
+      <sub><b>Registro de venda</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/esbocos/05-caixa-diario.png" alt="Esboço do caixa diário" width="350"><br>
+      <sub><b>Caixa diário</b></sub>
+    </td>
+  </tr>
+</table>
 
 ### 6.4 Identidade visual
 
 - **Cores:** azul (`blue`) no topo das páginas e nos botões, azul escuro (`darkblue`) em títulos e no efeito ao passar o mouse, fundo cinza claro (#F5F5F5), cartões brancos e texto em cinza escuro (#222222). Vermelho e verde aparecem apenas para indicar a situação da conta do cliente (Devendo e Em dia), sempre acompanhados de texto. O texto branco sobre o azul e o texto escuro sobre o fundo claro têm bom contraste, o que ajuda a leitura. As cores são definidas em variáveis CSS, o que permite trocar a paleta em um só lugar.
 - **Tipografia:** Arial, com fonte sem serifa genérica como alternativa. É uma fonte do próprio sistema, que não precisa ser baixada da internet, então as páginas ficam leves e legíveis.
-- **Logotipo/imagens:** logo do Mercadinho Igor (`logo.jpeg`), fornecida pelo proprietário [confirmar], com uso autorizado para este projeto. Não foram usadas outras imagens.
+- **Logotipo/imagens:** logo do Mercadinho Igor (`logo.jpeg`), fornecida pelo proprietário, com uso autorizado para este projeto. Não foram usadas outras imagens.
 
 ## 7. Protótipo
 
@@ -196,8 +230,10 @@ flowchart LR
 
 | Integrante | Responsabilidades |
 |------------|-------------------|
-| [Nome] | [ex.: escuta com o beneficiado, README] |
-| [Nome] | [ex.: página inicial e CSS base] |
+| Igor José Bastos Mota Filho | ✏️ Páginas de produtos e clientes, esboços e diagrama de navegação |
+| João Pinheiro Cavalcante | ✏️ Página de login, painel do administrador e CSS base (`sistema.css`) |
+| Vitória das Graças Silva | ✏️ Escuta com o beneficiado (Mercadinho Igor), logo e identidade visual, README |
+| Davyd Pinheiro Jacinto | ✏️ Página de caixa diário, esboços e diagrama de navegação |
 
 ## 10. Próximos passos (Etapa 02)
 
