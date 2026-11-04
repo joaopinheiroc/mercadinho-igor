@@ -217,16 +217,10 @@ flowchart LR
 |   ├── caixa_diario.html
 |   ├── entrada_estoque.html
 |   ├── registrar_venda.html
-├── docs/
-│   ├── evidencias/
-│   └── esboços/
 └── README.md
 ```
 
 ## 9. Organização do trabalho
-
-- **Branches:** `main` (versão estável), `develop` (integração) e branches de trabalho no formato `feature/nome-da-tarefa`.
-- **Commits:** mensagens claras e no imperativo, ex.: `Adiciona página de produtos`.
 
 | Integrante | Responsabilidades |
 |------------|-------------------|
