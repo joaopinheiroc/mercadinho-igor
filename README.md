@@ -217,6 +217,12 @@ flowchart LR
 |   ├── caixa_diario.html
 |   ├── entrada_estoque.html
 |   ├── registrar_venda.html
+├── docsesbocos/
+|   ├── 01-login.png
+|   ├── 02-painal_admin.png
+|   ├── 03-listar_produtos.png
+|   ├── 04-registrar_venda.png
+|   ├── 05-caixa_diario.png
 └── README.md
 ```
 
