@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mercadinho Igor | Cadastrar Cliente</title>
   <link rel="stylesheet" href="../sistema.css">
+  <script src="../js/auth.js"></script>
+  <script>exigirLogin();</script>
 </head>
 <body>
   <header class="topo">
     <h1>Cadastrar Cliente</h1>
-    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
   </header>
 
   <main class="conteudo">
@@ -55,10 +56,12 @@
 
         <div class="linha-form">
           <button type="submit" class="botao">Cadastrar cliente</button>
-          <a href="../admin/admin.html" class="botao botao-sec">Cancelar</a>
         </div>
       </form>
     </section>
   </main>
+  <footer class="rodape">
+    <a href="../admin/admin.html" class="botao">Voltar</a>
+  </footer>
 </body>
 </html>
