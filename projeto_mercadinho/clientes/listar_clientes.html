@@ -16,13 +16,12 @@
   <main class="conteudo">
     <section class="cartao" aria-labelledby="titulo-busca">
       <h2 id="titulo-busca">Buscar cliente</h2>
-      <form action="#" class="linha-form">
+      <form id="form-busca" class="linha-form">
         <div class="campo">
           <label for="busca">Nome do cliente</label>
           <input type="search" id="busca" name="busca" placeholder="Digite o nome">
         </div>
 
-        <button type="submit" class="botao">Buscar</button>
         <a href="cadastrar_cliente.html" class="botao botao-sec">Novo cliente</a>
       </form>
     </section>
@@ -36,8 +35,8 @@
               <th scope="col">Nome</th>
               <th scope="col">Telefone</th>
               <th scope="col">Bairro</th>
-              <th scope="col">Fiado</th>
               <th scope="col">Limite</th>
+              <th scope="col">Saldo devedor</th>
               <th scope="col">Ações</th>
             </tr>
           </thead>
@@ -49,5 +48,8 @@
   <footer class="rodape">
     <a href="../admin/admin.html" class="botao">Voltar</a>
   </footer>
+
+    <script src="../js/dados.js"></script>
+  <script src="../js/clientes/listar_clientes.js"></script>
 </body>
 </html>
