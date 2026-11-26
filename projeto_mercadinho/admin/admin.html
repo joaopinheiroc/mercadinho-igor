@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mercadinho Igor | Administrador</title>
   <link rel="stylesheet" href="../sistema.css">
+  <script src="../js/auth.js"></script>
+  <script>exigirLogin();</script>
 </head>
 <body>
   <header class="topo">
     <h1>Olá, Administrador!</h1>
-    <a href="../menu.html" class="voltar-topo">Sair</a>
   </header>
 
   <main class="conteudo">
@@ -73,5 +74,11 @@
         </nav>
     </section>
   </main>
+  <footer class="rodape">
+    <a href="../menu.html" class="botao" id="btn-sair">Sair</a>
+  </footer>
+  <script>
+    document.getElementById("btn-sair").addEventListener("click", sair);
+  </script>
 </body>
 </html>
