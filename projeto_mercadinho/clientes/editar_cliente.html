@@ -16,7 +16,7 @@
   <main class="conteudo">
     <section class="cartao" aria-labelledby="titulo-escolha">
       <h2 id="titulo-escolha">Escolher cliente</h2>
-      <form action="#" class="linha-form">
+      <form id="form-escolha" class="linha-form">
         <div class="campo">
           <label for="cliente">Cliente</label>
           <select id="cliente" name="cliente">
@@ -32,7 +32,9 @@
       <h2 id="titulo-dados">Dados do cliente</h2>
       <p class="nota">Os campos com * são obrigatórios.</p>
 
-      <form action="#" class="linha-form">
+      <p id="mensagem" role="status"></p>
+
+      <form id="form-cliente" class="linha-form">
         <div class="campo">
           <label for="nome">Nome completo *</label>
           <input type="text" id="nome" name="nome" required autocomplete="name">
@@ -54,17 +56,9 @@
         </div>
 
         <div class="campo">
-          <label for="fiado">Permitir compra no fiado? *</label>
-          <select id="fiado" name="fiado" required>
-            <option value="">Selecione</option>
-            <option>Sim</option>
-            <option>Não</option>
-          </select>
-        </div>
-
-        <div class="campo">
-          <label for="limite">Limite de fiado (R$)</label>
-          <input type="text" id="limite" name="limite" inputmode="decimal" aria-describedby="ajuda-limite">
+          <label for="limite">Limite de fiado (R$) *</label>
+          <input type="text" id="limite" name="limite" inputmode="decimal" placeholder="0,00" required aria-describedby="ajuda-limite">
+          <small id="ajuda-limite" class="nota">Valor máximo que o cliente pode ficar devendo.</small>
         </div>
 
         <div class="linha-form">
@@ -76,5 +70,8 @@
   <footer class="rodape">
     <a href="../admin/admin.html" class="botao">Voltar</a>
   </footer>
+
+    <script src="../js/dados.js"></script>
+  <script src="../js/clientes/editar_cliente.js"></script>
 </body>
 </html>
