@@ -16,11 +16,11 @@
   <main class="conteudo">
     <section class="cartao" aria-labelledby="titulo-item">
       <h2 id="titulo-item">Adicionar item</h2>
-      <form action="#" class="linha-form">
+      <form id="form-item" class="linha-form">
         <div class="campo">
           <label for="produto">Produto</label>
           <select id="produto" name="produto">
-            <option selected>Selecione o produto</option>
+            <option value="">Selecione o produto</option>
           </select>
         </div>
 
@@ -31,6 +31,7 @@
 
         <button type="submit" class="botao">Adicionar</button>
       </form>
+      <p id="msg-item" role="status"></p>
     </section>
 
     <section class="cartao" aria-labelledby="titulo-venda">
@@ -52,19 +53,29 @@
 
       <p class="total">Total: <span id="total-venda">R$ 0,00</span></p>
 
-      <form action="#" class="linha-form">
+      <p id="aviso-limite" role="status"></p>
+
+      <form id="form-pagamento" class="linha-form">
         <div class="campo">
           <label for="pagamento">Forma de pagamento</label>
           <select id="pagamento" name="pagamento">
-            <option selected>Selecione a forma de pagamento</option>
             <option>Dinheiro</option>
             <option>Pix</option>
             <option>Cartão</option>
+            <option>Fiado</option>
+          </select>
+        </div>
+
+        <div class="campo" id="campo-cliente" hidden>
+          <label for="cliente">Cliente</label>
+          <select id="cliente" name="cliente">
+            <option value="">Selecione o cliente</option>
           </select>
         </div>
 
         <button type="submit" class="botao">Finalizar venda</button>
       </form>
+      <p id="mensagem" role="status"></p>
     </section>
 
     <section class="cartao" aria-labelledby="titulo-hoje">
@@ -87,5 +98,8 @@
   <footer class="rodape">
     <a href="../admin/admin.html" class="botao">Voltar</a>
   </footer>
+
+  <script src="../js/dados.js"></script>
+  <script src="../js/operacoes/registrar_venda.js"></script>
 </body>
 </html>

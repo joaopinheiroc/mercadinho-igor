@@ -79,8 +79,29 @@ body {
   display: none;
 }
 
-#mensagem {
+.aviso {
+  margin: 0 0 1rem;
+  padding: 0.6rem 0.8rem;
+  background-color: #fff3cd;
+  color: #664d03;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.aviso:empty {
+  display: none;
+}
+
+#mensagem,
+#msg-conta,
+#msg-pagamento,
+#msg-item,
+#msg-venda {
   margin-top: 1rem;
+}
+
+[hidden] {
+  display: none !important;
 }
 
 /* ---------- painel do administrador (admin.html) ---------- */
