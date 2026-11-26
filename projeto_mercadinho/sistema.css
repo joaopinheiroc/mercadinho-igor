@@ -53,6 +53,36 @@ body {
   margin-top: 1rem;
 }
 
+.erro {
+  margin: 0 0 1rem;
+  padding: 0.6rem 0.8rem;
+  background-color: #ffe0e0;
+  color: #b00020;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.erro:empty {
+  display: none;
+}
+
+.sucesso {
+  margin: 0 0 1rem;
+  padding: 0.6rem 0.8rem;
+  background-color: #e0f5e4;
+  color: #1b6e2d;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.sucesso:empty {
+  display: none;
+}
+
+#mensagem {
+  margin-top: 1rem;
+}
+
 /* ---------- painel do administrador (admin.html) ---------- */
 
 .grupo {
@@ -127,19 +157,20 @@ body {
   font-size: 1.4rem;
 }
 
-.voltar-topo {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid #fff;
-  padding: 0.4rem 1rem;
-  border-radius: 8px;
+/* ---------- rodapé (botão Voltar / Sair) ---------- */
+
+.rodape {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  text-align: center;
 }
 
-.voltar-topo:hover,
-.voltar-topo:focus {
-  background-color: #fff;
-  color: var(--azul-escuro);
+.rodape .botao {
+  display: inline-block;
+  min-width: 160px;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* ---------- estrutura ---------- */
@@ -214,10 +245,11 @@ select:focus {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
 }
 
 .botao:hover,
-.botao:focus {
+.botao:focus-visible {
   background-color: var(--azul-escuro);
 }
 
@@ -230,9 +262,18 @@ select:focus {
 }
 
 .botao-sec:hover,
-.botao-sec:focus {
+.botao-sec:focus-visible {
   background-color: var(--azul-escuro);
   color: #fff;
+}
+
+.botao:active {
+  transform: translateY(1px);
+}
+
+.botao:focus-visible {
+  outline: 3px solid var(--azul-escuro);
+  outline-offset: 2px;
 }
 
 details summary {
