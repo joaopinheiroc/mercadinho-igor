@@ -9,15 +9,20 @@
     <body class="pagina-login">
         <section class="caixa">
             <img src="logo.jpeg" alt="Logo do Mercadinho Igor" class="logo">
-            <form action="admin/admin.html" method="get" class="formulario">
+            <form id="form-login" class="formulario">
                 <label for="usuario">Usuário</label>
-                <input type="text" id="usuario" name="usuario" required>
+                <input type="text" id="usuario" name="usuario" autocomplete="username" required>
 
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" required>
+                <input type="password" id="senha" name="senha" autocomplete="current-password" required>
+
+                <p id="erro-login" class="erro" role="alert"></p>
 
                 <button class="botao" type="submit">Entrar</button>
             </form>
         </section>
+
+        <script src="js/auth.js"></script>
+        <script src="js/login.js"></script>
     </body>
 </html>
