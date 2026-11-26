@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mercadinho Igor | Entrada de Estoque</title>
   <link rel="stylesheet" href="../sistema.css">
+  <script src="../js/auth.js"></script>
+  <script>exigirLogin();</script>
 </head>
 <body>
   <header class="topo">
     <h1>Entrada de Estoque</h1>
-    <a href="../admin/admin.html" class="voltar-topo">Voltar</a>
   </header>
 
   <main class="conteudo">
@@ -20,9 +21,6 @@
           <label for="produto">Produto</label>
           <select id="produto" name="produto">
             <option selected>Selecione o produto</option>
-            <option>Arroz</option>
-            <option>Coca-Cola 2l</option>
-            <option>Miojo</option>
           </select>
         </div>
 
@@ -50,18 +48,7 @@
               <th scope="col">Quantidade</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>07:50</td>
-              <td>Arroz</td>
-              <td>+2</td>
-            </tr>
-            <tr>
-              <td>07:52</td>
-              <td>Coca-Cola 2l</td>
-              <td>+1</td>
-            </tr>
-          </tbody>
+          <tbody id="entradas-hoje"></tbody>
         </table>
       </div>
     </section>
@@ -77,26 +64,13 @@
               <th scope="col">Em estoque</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>Arroz</td>
-              <td>R$ 4,50</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>Coca-Cola 2l</td>
-              <td>R$ 10,00</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Miojo</td>
-              <td>R$ 2,00</td>
-              <td>8</td>
-            </tr>
-          </tbody>
+          <tbody id="estoque-atual"></tbody>
         </table>
       </div>
     </section>
   </main>
+  <footer class="rodape">
+    <a href="../admin/admin.html" class="botao">Voltar</a>
+  </footer>
 </body>
 </html>
