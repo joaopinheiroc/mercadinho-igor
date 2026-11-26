@@ -6,12 +6,12 @@
 
 ## Equipe
 
-| Nome | Matrícula | GitHub |
-|------|-----------|--------|
-| Igor José Bastos Mota Filho | 557179 | @IgorF-prog |
-| João Pinheiro Cavalcante | 606422 | @joaopinheiroc |
-| Vitória das Graças Silva | 557364 | @vickSil |
-| Davyd Pinheiro Jacinto | 553156 | @Davyd01322 |
+| Nome | Matrícula | Curso | GitHub |
+|------|-----------|-------|--------|
+| Igor José Bastos Mota Filho | 557179 | Engenharia de Computação | @IgorF-prog |
+| João Pinheiro Cavalcante | 606422 | Engenharia de Software | @joaopinheiroc |
+| Vitória das Graças Silva | 557364 | Engenharia de Computação | @vickSil |
+| Davyd Pinheiro Jacinto | 553156 | Engenharia de Computação | @Davyd01322 |
 
 **Professor(a):** Nator Júnior Carvalho da Costa
 
